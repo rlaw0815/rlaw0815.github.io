@@ -4,9 +4,162 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Penguin World</title>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Nunito);
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+	perspective: 1px;
+	transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: Nunito;
+}
+
+h1 {
+   font-size: 250%
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 25vh 10%;
+  min-height: 120vh;
+  width: 100vw;
+  box-sizing: border-box;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
+	transform-style: inherit;
+}
+
+img {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  width: 320px;
+  height: 240px;
+  transform: translateZ(.25px) scale(.75) translateX(-94%) translateY(-100%) rotate(2deg);
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+img:last-of-type {
+  transform: translateZ(.4px) scale(.6) translateX(-104%) translateY(-40%) rotate(-5deg);
+}
+
+.slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+}
+
+.title {
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+  background: rgba(240,230,220, .7);
+  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: center;
+  font-size: 175%;
+  color: #fff;
+  text-shadow: 0 2px 2px #000;
+}
+
+#title {
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/36064wide.jpg");
+   background-attachment: fixed;  
+}
+
+#slide1:before {
+  background-image: url("https://img.shoplineapp.com/media/image_clips/575a7ea46170690b54024100/original.jpg?1465548450");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide2 {
+  background-image: url("https://wallpaperstock.net/wallpapers/thumbs1/36064wide.jpg");
+  background-attachment: fixed;
+}
+
+#slide3:before {
+  background-image: url("http://cdn.penguins-world.com/wp-content/uploads/Information_page.jpg");
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+
+#slide4 {
+  background: #222;
+}
+</style>
 </head>
 <body>
-    Welcome
+    <div id="title" class="slide header">
+        <h1>Welcome to Penguin World</h1>
+      </div>
+      
+      <div id="slide1" class="slide">
+        <div class="title">
+          <h1>About</h1>
+          <p>Penguins (order Sphenisciformes, family Spheniscidae) are a group of aquatic, flightless birds. They live almost exclusively in the Southern Hemisphere, with only one species, the Galapagos penguin, found north of the equator. Highly adapted for life in the water, penguins have countershaded dark and white plumage, and their wings have evolved into flippers. Most penguins feed on krill, fish, squid and other forms of sea life caught while swimming underwater. They spend about half of their lives on land and half in the oceans.
+            Although almost all penguin species are native to the Southern Hemisphere, they are not found only in cold climates, such as Antarctica. In fact, only a few species of penguin live so far south. Several species are found in the temperate zone, and one species, the Galápagos penguin, lives near the equator.
+            The largest living species is the emperor penguin (Aptenodytes forsteri): on average adults are about 1.1 m (3 ft 7 in) tall and weigh 35 kg (77 lb). The smallest penguin species is the little blue penguin (Eudyptula minor), also known as the fairy penguin, which stands around 40 cm (16 in) tall and weighs 1 kg (2.2 lb). Among extant penguins, larger penguins inhabit colder regions, while smaller penguins are generally found in temperate or even tropical climates (see also Bergmann's rule). Some prehistoric species attained enormous sizes, becoming as tall or as heavy as an adult human. These were not restricted to Antarctic regions; on the contrary, subantarctic regions harboured high diversity, and at least one giant penguin occurred in a region around 2,000 km south of the equator 35 mya, in a climate decidedly warmer than today.</p>
+        </div>
+      </div>
+      
+      <div id="slide2" class="slide">
+        <div class="title">
+          <h1>Etymology</h1>
+          <p>The word penguin first appears in the 16th century as a synonym for great auk. When European explorers discovered what are today known as penguins in the Southern Hemisphere, they noticed their similar appearance to the great auk of the Northern Hemisphere, and named them after this bird, although they are not closely related.
+            The etymology of the word penguin is still debated. The English word is not apparently of French, Breton or Spanish origin (the latter two are attributed to the French word pingouin "auk"), but first appears in English or Dutch.[2]
+            Some dictionaries suggest a derivation from Welsh pen, "head" and gwyn, "white", including the Oxford English Dictionary, the American Heritage Dictionary,the Century Dictionary and Merriam-Webster, on the basis that the name was originally applied to the great auk, either because it was found on White Head Island (Welsh Pen Gwyn) in Newfoundland, or because it had white circles around its eyes (though the head was black).
+            An alternative etymology links the word to Latin pinguis, which means "fat" or "oil".Support for this etymology can be found in the alternative Germanic word for penguin, fettgans or "fat-goose", and the related Dutch word vetgans.</p>
+        </div>
+        <img src="https://img.shoplineapp.com/media/image_clips/575a935061706952c5da3300/xlarge.jpg?1465553742" alt="img1">
+        <img src="https://img.shoplineapp.com/media/image_clips/575a8f0b617069110b5c0900/xlarge.jpg?1465552650" alt="img2"> 
+      </div>
+      
+      <div id="slide3" class="slide">
+        <div class="title">
+          <h1>Living species and recent extinctions</h1>
+          <p>The number of extant penguin species is debated. Depending on which authority is followed, penguin biodiversity varies between 17 and 20 living species, all in the subfamily Spheniscinae. Some sources consider the white-flippered penguin a separate Eudyptula species, while others treat it as a subspecies of the little penguin;[10][11] the actual situation seems to be more complicated.[12] Similarly, it is still unclear whether the royal penguin is merely a color morph of the macaroni penguin. The status of the rockhopper penguins is also unclear.</p>
+        </div>
+      </div>
+      
+      <div id="slide4" class="slide header">
+          <h1>The End</h1>
+      </div>
 </body>
 </html>
